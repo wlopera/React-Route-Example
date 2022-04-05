@@ -1,4 +1,6 @@
-import classes from './QuoteItem.module.css';
+import { Link } from "react-router-dom";
+
+import classes from "./QuoteItem.module.css";
 
 const QuoteItem = (props) => {
   return (
@@ -9,9 +11,9 @@ const QuoteItem = (props) => {
         </blockquote>
         <figcaption>{props.author}</figcaption>
       </figure>
-      <a className='btn'>
-        View Fullscreen
-      </a>
+      <Link className="btn" to={`/quotes/${props.id}`}>
+        Pantalla completa
+      </Link>
     </li>
   );
 };
