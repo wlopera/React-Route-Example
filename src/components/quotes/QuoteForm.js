@@ -1,10 +1,13 @@
-import { useRef } from "react";
+import { Fragment, useRef, useState } from "react";
+import { Prompt } from "react-router-dom";
 
 import Card from "../UI/Card";
 import LoadingSpinner from "../UI/LoadingSpinner";
 import classes from "./QuoteForm.module.css";
 
 const QuoteForm = (props) => {
+  const [isEntering, setIsEntering] = useState(false);
+
   const authorInputRef = useRef();
   const textInputRef = useRef();
 
@@ -19,28 +22,50 @@ const QuoteForm = (props) => {
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
   }
 
-  return (
-    <Card>
-      <form className={classes.form} onSubmit={submitFormHandler}>
-        {props.isLoading && (
-          <div className={classes.loading}>
-            <LoadingSpinner />
-          </div>
-        )}
+  const formFocusedHandler = () => {
+    setIsEntering(true);
+  };
 
-        <div className={classes.control}>
-          <label htmlFor="author">Autor</label>
-          <input type="text" id="author" ref={authorInputRef} />
-        </div>
-        <div className={classes.control}>
-          <label htmlFor="text">Texto</label>
-          <textarea id="text" rows="5" ref={textInputRef}></textarea>
-        </div>
-        <div className={classes.actions}>
-          <button className="btn">Agregar cita</button>
-        </div>
-      </form>
-    </Card>
+  const finishEnteringHandler = () => {
+    setIsEntering(false);
+  };
+
+  return (
+    <Fragment>
+      <Prompt
+        when={isEntering}
+        message={(location) =>
+          "Estas deguro de querer avandonar la página. La data ingresada se perdera."
+        }
+      />
+      <Card>
+        <form
+          onFocus={formFocusedHandler}
+          className={classes.form}
+          onSubmit={submitFormHandler}
+        >
+          {props.isLoading && (
+            <div className={classes.loading}>
+              <LoadingSpinner />
+            </div>
+          )}
+
+          <div className={classes.control}>
+            <label htmlFor="author">Autor</label>
+            <input type="text" id="author" ref={authorInputRef} />
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="text">Texto</label>
+            <textarea id="text" rows="5" ref={textInputRef}></textarea>
+          </div>
+          <div className={classes.actions}>
+            <button onClick={finishEnteringHandler} className="btn">
+              Agregar cita
+            </button>
+          </div>
+        </form>
+      </Card>
+    </Fragment>
   );
 };
 
