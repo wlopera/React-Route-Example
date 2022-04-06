@@ -25,3 +25,12 @@ Ejercicio de Rote con React. Curso Maximiliam.
 
 ## Salida Navegación programaticamente  - Prompt (react-route-dom) de control de salida de vistas
 ![Captura1](https://user-images.githubusercontent.com/7141537/161858339-b882372f-b804-480d-8967-e4031da6197e.PNG)
+
+## Codigo de useHistory , useLocation y route anidados
+![Captura1](https://user-images.githubusercontent.com/7141537/162022700-b75780bc-c3af-4ce7-ab92-cea187745135.PNG)
+![Captura2](https://user-images.githubusercontent.com/7141537/162022705-e8308bdc-d6a4-4028-bc12-ecd1a9d70e20.PNG)
+
+## Salida de useHistory , useLocation y route anidados
+![Captura3](https://user-images.githubusercontent.com/7141537/162022707-ac7d027c-95a0-4055-9cef-547533d930d5.PNG)
+![Captura4](https://user-images.githubusercontent.com/7141537/162022686-333b8754-7624-4f74-99b4-3f40c949a961.PNG)
+![Captura5](https://user-images.githubusercontent.com/7141537/162022697-458d734d-c954-415e-99d6-3bea192e3fc2.PNG)
