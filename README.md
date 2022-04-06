@@ -34,3 +34,12 @@ Ejercicio de Rote con React. Curso Maximiliam.
 ![Captura3](https://user-images.githubusercontent.com/7141537/162022707-ac7d027c-95a0-4055-9cef-547533d930d5.PNG)
 ![Captura4](https://user-images.githubusercontent.com/7141537/162022686-333b8754-7624-4f74-99b4-3f40c949a961.PNG)
 ![Captura5](https://user-images.githubusercontent.com/7141537/162022697-458d734d-c954-415e-99d6-3bea192e3fc2.PNG)
+
+## Salida Proceso completo
+![Captura1](https://user-images.githubusercontent.com/7141537/162053548-92737d99-0598-4e45-bc75-7a588d3c44eb.PNG)
+![Captura2](https://user-images.githubusercontent.com/7141537/162053549-da8193f0-4111-4439-9a10-d6e88b6b785c.PNG)
+![Captura3](https://user-images.githubusercontent.com/7141537/162053551-a7ace23b-d192-4947-bd14-67568d3a4d26.PNG)
+![Captura4](https://user-images.githubusercontent.com/7141537/162053539-dd74cf7d-3b98-4549-8495-8bac77883f73.PNG)
+![Captura5](https://user-images.githubusercontent.com/7141537/162053541-ee5776da-235f-4dd1-b2b0-221c4d29b584.PNG)
+![Captura6](https://user-images.githubusercontent.com/7141537/162053543-623e9feb-c792-469d-9f6d-60b0d85faaca.PNG)
+![Captura7PNG](https://user-images.githubusercontent.com/7141537/162053544-f4168ed6-fc10-40c3-b1fb-d51c7f942d58.PNG)
