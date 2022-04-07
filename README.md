@@ -43,3 +43,92 @@ Ejercicio de Rote con React. Curso Maximiliam.
 ![Captura5](https://user-images.githubusercontent.com/7141537/162053541-ee5776da-235f-4dd1-b2b0-221c4d29b584.PNG)
 ![Captura6](https://user-images.githubusercontent.com/7141537/162053543-623e9feb-c792-469d-9f6d-60b0d85faaca.PNG)
 ![Captura7PNG](https://user-images.githubusercontent.com/7141537/162053544-f4168ed6-fc10-40c3-b1fb-d51c7f942d58.PNG)
+
+# Deploy a Producción - Firebase(Hosting)
+
+-------------------------------------------------------------------------------------------------------------------
+												Configurar Firebase Hosting:
+-------------------------------------------------------------------------------------------------------------------
+Referencia: https://github.com/academind/react-complete-guide-code/tree/21-deploying-react-apps
+-------------------------------------------------------------------------------------------------------------------
+	Instala Firebase CLI
+	Necesitas Firebase CLI (una herramienta de línea de comandos) para alojar tu sitio con Firebase Hosting.
+	Ejecuta el siguiente comando de npm para instalar la CLI o actualizar a su versión más reciente.
+	
+	> npm install -g firebase-tools
+
+  ---------------------------------------------------------------------------------------------------------------
+	Inicializa el proyecto
+	Abre una ventana de la terminal y navega a un directorio raíz para tu app web (si no tienes uno, deberás crearlo).
+
+	Acceder a Google
+	> firebase login
+	
+	
+	Inicia el proyecto
+	Ejecuta el siguiente comando en el directorio raíz de tu app:
+	> firebase init
+
+  ---------------------------------------------------------------------------------------------------------------
+  Secuencia de pasos y respuestas:
+		  
+		  ? Are you ready to proceed? Yes
+		? Which Firebase features do you want to set up for this directory? 
+		Press Space to select features, then Enter to confirm your choices. 
+			Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+		=== Project Setup
+
+		First, let's associate this project directory with a Firebase project.
+		You can create multiple project aliases by running firebase use --add,
+		but for now we'll just set up a default project.
+
+		? Please select an option: Use an existing project
+		? Select a default Firebase project for this directory: react-http-9dad6 (react-http)
+			i  Using project react-http-9dad6 (react-http)
+
+		=== Hosting Setup
+
+		Your public directory is the folder (relative to your project directory) that        
+		will contain Hosting assets to be uploaded with firebase deploy. If you
+		have a build process for your assets, use your build's output directory.
+
+		? What do you want to use as your public directory? build
+		? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+		? Set up automatic builds and deploys with GitHub? No
+		? File build/index.html already exists. Overwrite? No
+  ---------------------------------------------------------------------------------------------------------------	
+	> firebase deploy  
+  ---------------------------------------------------------------------------------------------------------------	
+		=== Deploying to 'react-http-9dad6'...
+
+		i  deploying hosting
+		i  hosting[react-http-9dad6]: beginning deploy...
+		i  hosting[react-http-9dad6]: found 26 files in build
+		+  hosting[react-http-9dad6]: file upload complete 
+		i  hosting[react-http-9dad6]: finalizing version...
+		+  hosting[react-http-9dad6]: version finalized
+		i  hosting[react-http-9dad6]: releasing new version...
+		+  hosting[react-http-9dad6]: release complete
+
+		+  Deploy complete!
+
+		Project Console: https://console.firebase.google.com/project/react-http-9dad6/overview
+		Hosting URL: https://react-http-9dad6.web.app
+  ---------------------------------------------------------------------------------------------------------------	  
+	Notas:
+	 PEMITIR ELIMINAR APLICATIVO DEL HOSTING REMOTE
+		> firebase hosting:disable
+		
+    Desde aplicativo Firebase se puede eliminar 
+	   https://console.firebase.google.com/project/react-http-9dad6/hosting/sites?hl=es-419
+	   
+	  Desde aplicativo Firebase se puede agregar un dominio personalizado
+	   https://console.firebase.google.com/project/react-http-9dad6/hosting/sites?hl=es-419
+-------------------------------------------------------------------------------------------------------------------
+
+![Captura](https://user-images.githubusercontent.com/7141537/162251055-c97d3be9-7a94-401e-992b-e11a2289b77b.PNG)
+
+![Captura1PNG](https://user-images.githubusercontent.com/7141537/162251051-cd7142b9-c25b-453f-b075-3d55d38709c5.PNG)
+
+
