@@ -127,4 +127,8 @@ Referencia: https://github.com/academind/react-complete-guide-code/tree/21-deplo
 	   https://console.firebase.google.com/project/react-http-9dad6/hosting/sites?hl=es-419
 -------------------------------------------------------------------------------------------------------------------
 
+![Captura](https://user-images.githubusercontent.com/7141537/162251055-c97d3be9-7a94-401e-992b-e11a2289b77b.PNG)
+
+![Captura1PNG](https://user-images.githubusercontent.com/7141537/162251051-cd7142b9-c25b-453f-b075-3d55d38709c5.PNG)
+
 
